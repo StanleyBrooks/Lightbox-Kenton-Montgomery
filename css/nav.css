@@ -1,0 +1,135 @@
+.rF {
+		font-family: 'Glegoo';
+}
+
+aside {
+		margin: 1.75em;
+}
+
+.mainHeader {
+	width: 100%;
+	position: fixed;
+	top: 0;
+}
+
+body {
+	background: rgba(0,0,0,0.8);
+}
+/*-------------------------------------*/
+/*---Working on a Navigation Header----*/
+/*-------------------------------------*/
+.main-nav {
+		background: #478AF5;
+		overflow: hidden;
+}
+
+/*-------------------------------------*/
+/*-----Removing Default Properties-----*/
+/*-------------------------------------*/
+.nav-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+}
+
+/*-------------------------------------*/
+/*--Float and Style Small Screen Nav---*/
+/*-------------------------------------*/
+.nav-item {
+		float: left;
+		width: 33.3333%;
+		line-height: 1.5em;
+}
+
+/*-------------------------------------*/
+/*-----Nav Links Block + Link Color----*/
+/*-------------------------------------*/
+.nav-item a {
+		display: block;
+		color: white;
+		padding: 5px;
+		text-decoration: none;
+}
+
+/*-------------------------------------*/
+/*-----Hover Color and Background------*/
+/*-------------------------------------*/
+.nav-item a:hover {
+		background: #F5BB47;
+		color: white;
+}
+
+/*-------------------------------------*/
+/*--Changes Color When Link is Active--*/
+/*-------------------------------------*/
+.nav-item a:active {
+		background: white;
+		color: #478AF5;
+}
+
+/*-------------------------------------*/
+/*---Positions Footer at the Bottom----*/
+/*-------------------------------------*/
+.mainFooter {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+}
+
+.fancy_font {
+		font-family: 'Courgette';
+}
+
+h1{
+	font-size: 16px;
+}
+
+/*-------------------------------------*/
+/*-----------FLEXBOX LAYOUT------------*/
+/*-------------------------------------*/
+.flexcontainer {
+	font-size: 16;
+	flex-flow: row wrap;
+	display: flex;
+	margin: 40px 0 34px 0;
+/*	align-items: center;*/
+}
+
+#imageGallery div {
+	flex: auto;
+	width: 200px;
+	margin: .5vw;
+}
+
+#imageGallery div img {
+  width: 100%;
+  height: auto;
+}
+
+/*-------------------------------------*/
+/*-----------Reflexive Layout----------*/
+/*----Looks better on large screens----*/
+/*------media brake is for content-----*/
+/*-------------------------------------*/
+
+
+@media screen and ( min-width: 690px ) {
+
+		.nav-item {
+				width: auto;
+				font-size: 1.25em;
+				line-height: 2em;
+		}
+
+		.nav-item a {
+				padding: 0 1.25em 0 1.25em;
+		}
+
+		.footer-item {
+				padding: 0;
+				font-size: 1em;
+				line-height: 1.75em;
+				float: right;
+		}
+
+}
