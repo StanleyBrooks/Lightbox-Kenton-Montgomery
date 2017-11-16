@@ -1,25 +1,92 @@
+* {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+}
+
+body {
+    background: linear-gradient(to bottom, #434343 0%, #000000 100%);
+     → 
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+h1{
+    color: whitesmoke;
+	text-shadow: 2px 2px #000;
+}
+
+h3 {
+    font-weight: 600;
+}
+
 /*---------------------------------*/
 /*-------------Overlay-------------*/
 /*---------------------------------*/
 #overlay {
+    background: rgba(0,0,0,0.8);
     width: 100%;
     height:100%;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     display: none;
     text-align: center;
-    z-index: 5;
-    background: rgba(0,0,0,0.8);
 }
 
 #overlay img {
-    margin-top: 100px;
-    height: 100%;
-    max-height: 675px;
-    z-index: 5;
+    padding: 5%;
+	margin-top: 50px;
+    width: 100%;
+    max-width: 900px;
 }
 
 #overlay p {
     color: white;
+}
+
+/* cell inherit height from carousel */
+.carousel-cell {
+  height: 100%;
+}
+
+.carousel-cell {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flickity-page-dots { 
+	bottom: 10px; 
+}
+
+/* breakpoint for large screens, this activates flickity */
+@media screen and (min-width: 768px) {
+	
+	#imageGallery {
+		margin-top: 40px;
+	}
+    
+    .carousel-cell {
+        width: 50%;
+    }
+    
+    .carousel { 
+        height: 30em;
+    }
+	
+    #imageGallery {
+        height: 10rem;
+    }
+    
+    .img-thumbnail {
+    background-color: grey;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    display: inline-block; /* makes it fit in like an <img> */
+    background-size: contain; /* or contain */
+    background-position: center center;
+    background-repeat: no-repeat;
+	}
 }
